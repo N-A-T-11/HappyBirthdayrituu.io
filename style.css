@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins','sans-serif';
+}
+
+body {
+    background: #F8E3DD;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+}
+
+#text {
+    position: absolute;
+    font-size: 5.5em;
+    color: #000000;
+    text-overflow:2px 2px 4px rgba(0,0,0, .2);
+    margin-top: 90%; /* Adjust this value as needed for initial position */
+    transform: translateY(-90%);
+    left: 26%;
+    
+}
+#text1 {
+    position: absolute;
+    /* margin-left: auto; */
+    /* bottom: 10; */
+    font-size: 5em;
+    margin-top: 100%; /* Adjust this value as needed for initial position */
+    transform: translateY(-10%);
+    
+}
+
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Fill the width of the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the image covers the container */
+    object-position: center; /* Centers the image */
+    pointer-events: none;
+}
+.sec {
+    position: relative;
+    background: #F8E3DD;
+    padding: 10px;
+}
+.sec h2{
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    text-align: center;
+}
+.sec p {
+    font-size: 1em;
+    color: #000000;
+    font-weight: 300;
+}
+@media (max-width: 600px) {
+    #text {
+        font-size: 3em; /* Adjust as needed */
+        left: 50%; /* Center the text */
+        transform: translateX(-50%); /* Center horizontally */
+    }
+    #text1 {
+        font-size: 2.5em; /* Adjust as needed */
+        top: 60%; /* Adjust as needed */
+    }
+    .parallax img {
+        width: 100%; /* Fill the width of the screen */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Ensures the image covers the screen */
+        object-position: center; /* Centers the image */
+    }
+    }
+    .sec {
+        padding: 10px; /* Adjust as needed */
+    }
